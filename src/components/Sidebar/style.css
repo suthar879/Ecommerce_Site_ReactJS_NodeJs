@@ -1,0 +1,17 @@
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
+
+.sidebar ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.sidebar  ::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 20px;
+}
+
+.sidebar  ::-webkit-scrollbar-track {
+  background: #fff;
+}

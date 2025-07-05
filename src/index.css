@@ -1,0 +1,148 @@
+@import "tailwindcss";
+@layer utilities {
+  .bg-primary {
+    background-color: #ff5252;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background: #f5f0f0;
+  color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff5252;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.link:hover {
+  color: #ff5252;
+}
+
+nav ul button {
+  text-transform: capitalize !important;
+}
+
+.sliderHome {
+  overflow: inherit !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+  color: #000;
+}
+
+.homeCatSlider {
+  overflow: inherit !important;
+}
+
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+
+.homeCatSlider .swiper-button-prev:after,
+.homeCatSlider .swiper-button-next:after {
+  font-size: 16px !important;
+  color: #000;
+}
+
+.homeCatSlider .swiper-button-prev:hover,
+.homeCatSlider .swiper-button-next:hover {
+  background: #ff5252 !important;
+  color: #fff !important;
+}
+
+.homeCatSlider .swiper-button-prev:hover::after,
+.homeCatSlider .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+.homeCatSlider .item {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.ads_banner .swiper-button-prev,
+.ads_banner .swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+
+.ads_banner .swiper-button-prev:after,
+.ads_banner .swiper-button-next:after {
+  font-size: 16px !important;
+  color: #000;
+}
+
+.ads_banner .swiper-button-prev:hover,
+.ads_banner .swiper-button-next:hover {
+  background: #ff5252 !important;
+  color: #fff !important;
+}
+
+.ads_banner .swiper-button-prev:hover::after,
+.ads_banner .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+   50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 2s ease-in-out forwards;
+}
